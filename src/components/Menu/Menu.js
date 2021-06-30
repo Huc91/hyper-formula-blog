@@ -9,33 +9,33 @@ const navigationLink = [
     label: 'home',
     url: '/',
   },
-  {
-    label: 'projects',
-    url: '/projects',
-  },
-  {
-    label: 'events',
-    url: '/events',
-  },
+  // {
+  //   label: 'projects',
+  //   url: '/projects',
+  // },
+  // {
+  //   label: 'events',
+  //   url: '/events',
+  // },
   {
     label: 'about',
     url: '/about',
   },
-  {
-    label: 'contact',
-    url: '/contact',
-  },
+  // {
+  //   label: 'contact',
+  //   url: '/contact',
+  // },
 
 ]
 
 export function Menu(){
   return (
-    <div className={ container }>
+    <nav className={ container }>
       <ul className={ list }>
         { navigationLink.map( (link, i) => {
           return <Link key={i} className={menuItem} to={link.url}>{ link.label }</Link>
         })}
       </ul>
-    </div>
+    </nav>
   )
 }
