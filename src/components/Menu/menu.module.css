@@ -7,3 +7,20 @@
   background-color: #212121;
   color: #fafafa
 }
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  color: #fafafa
+}
+
+.menu-item:visited {
+  color: #fafafa
+}
+
+.menu-item:hover {
+  text-decoration: underline;
+}

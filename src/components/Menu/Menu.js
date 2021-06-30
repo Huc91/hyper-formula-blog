@@ -1,6 +1,8 @@
 import * as React from 'react';
-
-import { container } from './menu.module.css';
+//components
+import { Link } from 'gatsby'
+//style
+import { container, list, menuItem } from './menu.module.css';
 
 const navigationLink = [
   {
@@ -29,10 +31,10 @@ const navigationLink = [
 export function Menu(){
   return (
     <div className={ container }>
-      <ul>
-        { navigationLink.map( (link => {
-          return <li>{ link.label }</li>
-        }))}
+      <ul className={ list }>
+        { navigationLink.map( (link, i) => {
+          return <Link key={i} className={menuItem} to={link.url}>{ link.label }</Link>
+        })}
       </ul>
     </div>
   )
