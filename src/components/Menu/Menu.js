@@ -1,6 +1,6 @@
 import * as React from 'react';
 //components
-import { Link } from 'gatsby'
+import { Link } from 'gatsby';
 //style
 import { container, list, menuItem } from './menu.module.css';
 
@@ -25,17 +25,20 @@ const navigationLink = [
   //   label: 'contact',
   //   url: '/contact',
   // },
+];
 
-]
-
-export function Menu(){
+export function Menu() {
   return (
-    <nav className={ container }>
-      <ul className={ list }>
-        { navigationLink.map( (link, i) => {
-          return <Link key={i} className={menuItem} to={link.url}>{ link.label }</Link>
+    <nav className={container}>
+      <ul className={list}>
+        {navigationLink.map((link, i) => {
+          return (
+            <Link key={i} className={menuItem} to={link.url}>
+              {link.label}
+            </Link>
+          );
         })}
       </ul>
     </nav>
-  )
+  );
 }

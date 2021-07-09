@@ -1,20 +1,20 @@
-import * as React from "react"
+import * as React from 'react';
 
 // layout
-import DefaultLayout from "../layouts/default"
+import DefaultLayout from '../layouts/default';
+
+// Plugins
+import { StaticImage } from 'gatsby-plugin-image';
 
 // markup
 const IndexPage = () => {
   return (
     <DefaultLayout>
-      <h1 >
-        hyperFormula( )
-      </h1>
-      <h2>
-        Luca Ucciero
-      </h2>
+      <h1>hyperFormula( )</h1>
+      <h2>Luca Ucciero</h2>
+      <StaticImage />
     </DefaultLayout>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;

@@ -5,7 +5,7 @@
   bottom: 0;
   width: 33vw;
   background-color: #212121;
-  color: #fafafa
+  color: #fafafa;
 }
 
 .list {
@@ -14,11 +14,11 @@
 }
 
 .menu-item {
-  color: #fafafa
+  color: #fafafa;
 }
 
 .menu-item:visited {
-  color: #fafafa
+  color: #fafafa;
 }
 
 .menu-item:hover {
