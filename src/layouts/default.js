@@ -3,16 +3,15 @@ import React from 'react';
 // components
 import { Menu } from '../components/Menu/Menu';
 
-// styles
-const pageStyles = {
-  color: '#232129',
-  padding: 96,
-  fontFamily: '-apple-system, Roboto, sans-serif, serif',
-};
+// fonts
+import "@fontsource/ibm-plex-mono/500.css" // Weight 500.
+
+// style
+import './default.css'
 
 const DefaultLayout = ({ pageTitle, children }) => {
   return (
-    <main style={pageStyles}>
+    <main>
       <title>hyperFormula / Luca Ucciero</title>
       <Menu></Menu>
       <h1>{pageTitle}</h1>
