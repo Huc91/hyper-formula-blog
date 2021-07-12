@@ -1,10 +1,21 @@
 import React from 'react';
 
+//style
+import * as styles from './style.module.css';
+
 export function Card({title, src, alt}) {
     return (
-        <div>
-            {title && <h3>{title}</h3>}
-            {src && (<img src={src} alt={alt || 'no description'} />)}
+        <div className={styles.container}>
+            {title && <h3 className={styles.title}>{title}</h3>}
+            {src && (
+                <div className={styles.imageContainer}>
+                    <img
+                        className={styles.image} 
+                        src={src}
+                        alt={alt || 'no description'}
+                    />
+                </div>
+            )}
         </div>
     )
 }

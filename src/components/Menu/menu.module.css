@@ -6,6 +6,7 @@
   width: 33vw;
   background-color: #212121;
   color: #fafafa;
+  display: none;
 }
 
 .list {
