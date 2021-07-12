@@ -5,6 +5,14 @@
     width: 100%;
     margin-left: 1rem;
     box-shadow: -1rem 1rem #6C6C6C;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    will-change: transform;
+}
+
+.container:hover {
+    background-color: #F3FFFA;
+    transform: translate(0.25rem, -0.25rem);
 }
 
 .title {
