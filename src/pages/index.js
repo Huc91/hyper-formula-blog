@@ -15,7 +15,7 @@ const IndexPage = () => {
     <DefaultLayout>
       <h1>hyperFormula()</h1>
       <h2>Luca Ucciero</h2>
-      <Card title="monster hand" src="https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large"></Card>
+      <Card title="monster hand" url="/about" src="https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large"></Card>
     </DefaultLayout>
   );
 };

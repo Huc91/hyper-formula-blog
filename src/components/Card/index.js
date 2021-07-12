@@ -3,9 +3,12 @@ import React from 'react';
 //style
 import * as styles from './style.module.css';
 
-export function Card({title, src, alt}) {
+// Gatsby
+import { navigate } from "gatsby"
+
+export function Card({title, src, alt, url}) {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} onClick={ () => navigate(url || '/')}>
             {title && <h3 className={styles.title}>{title}</h3>}
             {src && (
                 <div className={styles.imageContainer}>
