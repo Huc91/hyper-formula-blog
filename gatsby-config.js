@@ -18,5 +18,20 @@ module.exports = {
       },
       __key: 'images',
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/blog`,
+        name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/project`,
+        name: `project`,
+      },
+    },
+    `gatsby-transformer-remark`,
   ],
 };
